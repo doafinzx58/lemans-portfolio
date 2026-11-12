@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dafin Orvala Aprillo • Portofolio Siswa | SMK Telkom Malang</title>
+  <meta name="description" content="Portofolio resmi Dafin Orvala Aprillo, siswa SMK Telkom Malang. Dokumentasi profil diri, karya desain grafis, editing video, dan minat otomotif.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP STATUS BAR
+       ======================================================================== -->
+  <header class="hud-telemetry-bar">
+    <div class="hud-track-info">
+      <div class="hud-flag-badge">
+        <span class="flag-dot"></span>
+        <span>SMK TELKOM MALANG // PORTOFOLIO DAFIN ORVALA APRILLO</span>
+      </div>
+      <div class="hud-clock" id="live-endurance-clock">
+        STATUS: <span>AKTIF • SISWA SMK TELKOM MALANG</span>
+      </div>
+      <div class="hud-lap-counter">
+        JURUSAN: <strong>TEKNIK KOMPUTER &amp; JARINGAN (TKJ)</strong>
+      </div>
+    </div>
+
+    <div class="hud-controls-group">
+      <!-- Theme Color Palette Modal Button -->
+      <button class="hud-btn" id="btn-open-palette" title="Ganti Gradasi Warna Tema">
+        <span>🎨 PILIH WARNA TEMA</span>
+      </button>
+
+      <!-- Light / Dark Mode Toggle Button -->
+      <button class="hud-btn" id="btn-mode-toggle" title="Ganti Mode Terang / Gelap">
+        <span id="mode-toggle-icon">☀️</span>
+        <span class="mode-label">TEMA</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN NAVIGATION BAR
+       ======================================================================== -->
+  <nav class="main-header">
+    <div class="nav-container">
+      <div class="brand-badge">
+        <span class="brand-racing-tag">DAFIN ORVALA APRILLO</span>
+        <span class="brand-title">SMK TELKOM MALANG</span>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="nav-links-pills">
+        <button class="nav-pill-btn active" data-view="view-utama" id="tab-utama">
+          <span>🏁 Tampilan Utama</span>
+        </button>
+        <button class="nav-pill-btn" data-view="view-profil" id="tab-profil">
+          <span>👤 Halaman Profil</span>
+        </button>
+        <button class="nav-pill-btn" data-view="view-kontak" id="tab-kontak">
+          <span>✉️ Halaman Kontak</span>
+        </button>
+      </div>
+
+      <!-- Right Utility Indicator -->
+      <div class="nav-actions-right">
+        <button class="theme-palette-btn" id="btn-quick-palette" onclick="document.getElementById('btn-open-palette').click()" title="Ubah Gradasi Warna">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a7 7 0 0 0 0 14h2a3 3 0 0 0 3-3c0-2-3-2-3-4a2 2 0 0 1 2-2 2 2 0 0 0 2-2 7 7 0 0 0-6-3z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       CONTENT WRAPPER FOR SINGLE PAGE VIEWS
+       ======================================================================== -->
+  <main class="content-wrapper">
+
+    <!-- ======================================================================
+         VIEW 1: TAMPILAN UTAMA (HOME / OVERVIEW)
+         ====================================================================== -->
+    <section class="view-section active" id="view-utama">
+      
+      <!-- Hero Banner -->
+      <div class="hero-paddock">
+        <div class="hero-layout-split">
+          <div class="hero-content">
+            <div class="hero-lap-badge">
+              <span class="badge-icon">⚡</span>
+              <span>SMK TELKOM MALANG • TEKNIK KOMPUTER DAN JARINGAN (TKJ)</span>
+            </div>
+
+            <h1 class="hero-title">
+              HALO, SAYA DAFIN ORVALA APRILLO. <br>
+              <span class="gradient-text">SISWA SMK TELKOM MALANG.</span>
+            </h1>
+
+            <p class="hero-desc">
+              Selamat datang di website portofolio resmi saya. Website ini saya susun sebagai sarana dokumentasi profil diri, karya desain grafis &amp; editing video, eksplorasi teknik komputer dan jaringan (TKJ), serta dokumentasi ketertarikan pada dunia modifikasi otomotif. Terima kasih atas kunjungan Bapak/Ibu Guru dan rekan-rekan sekalian. Silakan menjelajahi portofolio ini.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#profil" class="btn-primary" data-goto-view="view-profil">
+                <span>👤 Lihat Profil Lengkap</span>
+              </a>
+              <a href="#garasi-mobil" class="btn-secondary" id="btn-scroll-to-cars">
+                <span>🚗 Galeri Modifikasi Mobil</span>
+              </a>
+              <a href="#kontak" class="btn-secondary" data-goto-view="view-kontak">
+                <span>✉️ Hubungi Saya</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Profile Photo Card (Sisi Kanan) -->
+          <div class="hero-profile-card-wrap">
+            <div class="hero-profile-card">
+              <div class="hero-photo-frame">
+                <img src="assets/img/profile-dafin.jpg" alt="Foto Muka Dafin Orvala Aprillo" class="hero-photo-img">
+                <div class="hero-photo-badge">DAFIN ORVALA APRILLO</div>
+              </div>
+              <div class="hero-profile-card-meta">
+                <span class="hero-card-school">SMK TELKOM MALANG (MOKLET)</span>
+                <span class="hero-card-role">Desainer &amp; Editor Video</span>
+                <span class="hero-card-tag">Teknik Komputer &amp; Jaringan (TKJ)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="telemetry-stats-grid">
+        <div class="telemetry-stat-card">
+          <div class="stat-header">
+            <span class="stat-label">ASAL SEKOLAH</span>
+            <span class="stat-icon">🏫</span>
+          </div>
+          <div class="stat-value">SMK Telkom</div>
+          <div class="stat-subtext">Malang, Jawa Timur (Moklet)</div>
+        </div>
+
+        <div class="telemetry-stat-card">
+          <div class="stat-header">
+            <span class="stat-label">BIDANG KOMPETENSI</span>
+            <span class="stat-icon">🎨</span>
+          </div>
+          <div class="stat-value">Desain &amp; Video</div>
+          <div class="stat-subtext">Desainer Grafis &amp; Video Editor</div>
+        </div>
+
+        <div class="telemetry-stat-card">
+          <div class="stat-header">
+            <span class="stat-label">MINAT &amp; HOBI</span>
+            <span class="stat-icon">🚗</span>
+          </div>
+          <div class="stat-value">Koleksi Otomotif</div>
+          <div class="stat-subtext">Apresiasi Modifikasi Clean Stance</div>
+        </div>
+
+        <div class="telemetry-stat-card">
+          <div class="stat-header">
+            <span class="stat-label">PROGRAM KEAHLIAN</span>
+            <span class="stat-icon">💻</span>
+          </div>
+          <div class="stat-value">TKJ Moklet</div>
+          <div class="stat-subtext">Teknik Komputer &amp; Jaringan</div>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           GARASI MOBIL SAYA (MY RIDE SHOWCASE - KOLEKSI MOBIL DAFIN)
+           ==================================================================== -->
+      <div class="car-showcase-box" id="garasi-mobil">
+        <div class="car-showcase-header">
+          <div class="section-title">
+            <span class="title-accent"></span>
+            <span>GARASI MOBIL &amp; MODIFIKASI // DAFIN'S GARAGE</span>
+          </div>
+          <div class="car-spec-pill-strip">
+            <span class="car-spec-pill">TOTAL DOKUMENTASI: <strong>4 Foto Stance Pilihan</strong></span>
+            <span class="car-spec-pill">MOBIL: <strong>Innova Venturer 2021</strong></span>
+            <span class="car-spec-pill">DETAIL: <strong>Custom Running DRL &amp; LED</strong></span>
+            <span class="car-spec-pill">KONSEP: <strong>Clean Stance &amp; Daily Cruiser</strong></span>
+          </div>
+        </div>
+
+        <div class="car-gallery-grid">
+          <!-- Photo 1: Innova Venturer 2021 - Garasi Rumah (Malam) -->
+          <div class="car-photo-card" data-full="assets/img/car-innova-1.jpg" data-caption="Toyota Innova Venturer 2021 - Garasi Rumah (Malam), Custom Running DRL LED Menyala">
+            <div class="car-card-img-wrap">
+              <img src="assets/img/car-innova-1.jpg" alt="Innova Venturer 2021 di Garasi Rumah Malam" class="car-card-img">
+              <span class="car-card-badge">GARASI RUMAH</span>
+              <span class="car-card-zoom-btn">🔍</span>
+            </div>
+            <div class="car-card-caption">
+              <span class="car-card-title">Innova Venturer 2021</span>
+              <span class="car-card-angle">📍 Garasi Rumah (Malam)</span>
+            </div>
+          </div>
+
+          <!-- Photo 2: Innova Venturer 2021 - BRP Garage (Prabumulih) -->
+          <div class="car-photo-card" data-full="assets/img/car-innova-2.jpg" data-caption="Toyota Innova Venturer 2021 - BRP Garage (Prabumulih), Plat N 11 PAD &amp; Sporty Exhaust">
+            <div class="car-card-img-wrap">
+              <img src="assets/img/car-innova-2.jpg" alt="Innova Venturer 2021 di BRP Garage" class="car-card-img">
+              <span class="car-card-badge">BRP GARAGE</span>
+              <span class="car-card-zoom-btn">🔍</span>
+            </div>
+            <div class="car-card-caption">
+              <span class="car-card-title">Innova Venturer 2021</span>
+              <span class="car-card-angle">📍 BRP Garage, Prabumulih</span>
+            </div>
+          </div>
+
+          <!-- Photo 3: Innova Venturer 2021 - Carport Depan Rumah -->
+          <div class="car-photo-card" data-full="assets/img/car-innova-3.jpg" data-caption="Toyota Innova Venturer 2021 - Carport Depan Rumah, Detail Custom Headlamp DRL LED &amp; Grille">
+            <div class="car-card-img-wrap">
+              <img src="assets/img/car-innova-3.jpg" alt="Innova Venturer 2021 di Carport Rumah" class="car-card-img">
+              <span class="car-card-badge">CARPORT RUMAH</span>
+              <span class="car-card-zoom-btn">🔍</span>
+            </div>
+            <div class="car-card-caption">
+              <span class="car-card-title">Innova Venturer 2021</span>
+              <span class="car-card-angle">📍 Carport Depan Rumah</span>
+            </div>
+          </div>
+
+          <!-- Photo 4: Innova Venturer 2021 - Tikungan Jalan BRP Garage -->
+          <div class="car-photo-card" data-full="assets/img/car-innova-4.jpg" data-caption="Toyota Innova Venturer 2021 - Tikungan Jalan BRP Garage, Clean Stance &amp; Street Cruiser">
+            <div class="car-card-img-wrap">
+              <img src="assets/img/car-innova-4.jpg" alt="Innova Venturer 2021 di Tikungan Jalan BRP Garage" class="car-card-img">
+              <span class="car-card-badge">TIKUNGAN JALAN</span>
+              <span class="car-card-zoom-btn">🔍</span>
+            </div>
+            <div class="car-card-caption">
+              <span class="car-card-title">Innova Venturer 2021</span>
+              <span class="car-card-angle">📍 Tikungan BRP Garage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="section-header-racing">
+        <div class="section-title">
+          <span class="title-accent"></span>
+          <span>PROYEK &amp; KARYA KREATIF DAFIN</span>
+        </div>
+      </div>
+
+      <div class="projects-garage-grid">
+        <!-- Project 1: Desain Grafis & Video Editing (Digabung) -->
+        <div class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="racing-class-tag class-hypercar">DESAIN &amp; VIDEO</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 class="project-title">Desain Grafis &amp; Video Editing Kreatif</h3>
+            <p class="project-desc">
+              Penggabungan keahlian desain identitas visual (logo, branding media, tipografi, dan poster modern) dengan teknik pasca-produksi video sinematik dinamis (pemotongan ritme audio, color grading presisi, transisi halus, dan reels resolusi tinggi).
+            </p>
+          </div>
+          <div>
+            <div class="project-telemetry-spec">
+              <span class="spec-item">SOFTWARE: <strong>Photoshop / Premiere Pro / CapCut PC</strong></span>
+              <span class="spec-item">STATUS: <strong>Karya Portofolio Kreatif</strong></span>
+            </div>
+            <div class="project-footer-actions">
+              <a href="#kontak" data-goto-view="view-kontak" class="btn-card-link">Kirim Masukan ↗</a>
+              <a href="#profil" data-goto-view="view-profil" class="btn-card-link">Profil Kreator</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Minat di Dunia Mobil (Dokumentasi & Modifikasi Otomotif) -->
+        <div class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="racing-class-tag class-lmp2">MINAT OTOMOTIF</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 class="project-title">Dokumentasi &amp; Modifikasi Innova Venturer</h3>
+            <p class="project-desc">
+              Dokumentasi antusiasme dan karya estetika otomotif pada kendaraan <strong>Toyota Innova Venturer 2021</strong> yang mengusung konsep clean stance, fitment velg proporsional, instalasi custom running LED DRL, serta perawatan detailing eksterior mobil.
+            </p>
+          </div>
+          <div>
+            <div class="project-telemetry-spec">
+              <span class="spec-item">MOBIL: <strong>Innova Venturer 2021</strong></span>
+              <span class="spec-item">GALERI: <strong>4 Dokumentasi Pilihan</strong></span>
+            </div>
+            <div class="project-footer-actions">
+              <a href="#garasi-mobil" class="btn-card-link" id="btn-goto-cars-from-card">Lihat Garasi Mobil ↗</a>
+              <a href="#profil" data-goto-view="view-profil" class="btn-card-link">Profil Dafin</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Teknik Komputer dan Jaringan (TKJ) -->
+        <div class="project-card">
+          <div>
+            <div class="project-card-header">
+              <span class="racing-class-tag class-gt3">TKJ &amp; IT MOKLET</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3 class="project-title">Simulasi Jaringan &amp; Portofolio Digital</h3>
+            <p class="project-desc">
+              Penerapan kompetensi keahlian Teknik Komputer dan Jaringan (TKJ) SMK Telkom Malang dalam simulasi topologi jaringan komputer LAN/WLAN, konfigurasi perangkat jaringan, serta perancangan antarmuka web portofolio interaktif berbasis JavaScript murni.
+            </p>
+          </div>
+          <div>
+            <div class="project-telemetry-spec">
+              <span class="spec-item">JURUSAN: <strong>Teknik Komputer &amp; Jaringan (TKJ)</strong></span>
+              <span class="spec-item">SEKOLAH: <strong>SMK Telkom Malang</strong></span>
+            </div>
+            <div class="project-footer-actions">
+              <a href="#profil" data-goto-view="view-profil" class="btn-card-link">Lihat Kompetensi ↗</a>
+              <a href="#kontak" data-goto-view="view-kontak" class="btn-card-link">Tanya Informasi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+         VIEW 2: HALAMAN PROFIL (YOUTUBE-STYLE 16:9 BANNER & DAFIN'S AVATAR)
+         ====================================================================== -->
+    <section class="view-section" id="view-profil">
+      <div class="profile-paddock-container">
+        
+        <!-- YouTube-Style 16:9 Banner Behind & Above Profile Photo -->
+        <div class="banner-stage-box" id="banner-stage">
+          <img src="assets/img/banner-16-9.png" alt="Banner 16:9 Mobil Dafin" class="banner-img-element" id="profile-banner-img">
+          <div class="banner-overlay-gradient"></div>
+
+          <!-- Banner Action Controls -->
+          <div class="banner-actions-bar">
+            <label for="input-banner-upload" class="btn-banner-action" title="Ubah Background Banner Atas">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                <circle cx="12" cy="13" r="4"/>
+              </svg>
+              <span>Ubah Banner</span>
+            </label>
+            <input type="file" id="input-banner-upload" accept="image/*" style="display: none;">
+
+            <button class="btn-banner-action" id="btn-reset-banner" title="Kembalikan Banner ke Foto 16:9 Default">
+              <span>↺ Reset</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Profile Details Strip -->
+        <div class="profile-header-details">
+          
+          <!-- Overlapping Profile Avatar (Like YouTube / Twitter) -->
+          <div class="avatar-overlap-wrapper">
+            <div class="avatar-frame">
+              <img src="assets/img/profile-dafin.jpg" alt="Foto Muka Dafin" class="avatar-img-element" id="profile-avatar-img">
+              
+              <!-- Floating Camera Upload Button on Avatar -->
+              <label for="input-avatar-upload" class="avatar-edit-overlay-btn" title="Ganti Foto Profil">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                  <circle cx="12" cy="13" r="4"/>
+                </svg>
+              </label>
+              <input type="file" id="input-avatar-upload" accept="image/*" style="display: none;">
+            </div>
+
+            <!-- Mini Avatar Reset Button -->
+            <div class="avatar-controls-strip">
+              <button class="btn-avatar-mini" id="btn-reset-avatar" title="Reset foto profil ke foto default">
+                ↺ Reset Foto
+              </button>
+            </div>
+          </div>
+
+          <!-- Name & School Badge -->
+          <div class="driver-id-row">
+            <div>
+              <div class="driver-status-badge">
+                <span>SISWA AKTIF SMK TELKOM MALANG (MOKLET)</span>
+              </div>
+              <h2 class="driver-name-headline" id="profile-driver-name">DAFIN ORVALA APRILLO</h2>
+              <div class="driver-role-title">Siswa SMK Telkom Malang • Teknik Komputer dan Jaringan • Desainer &amp; Editor Video</div>
+            </div>
+          </div>
+
+          <!-- Narrative Bio (Sopan, Santun & Formal) -->
+          <p class="driver-bio-narrative">
+            Perkenalkan, nama saya <strong>Dafin Orvala Aprillo</strong>, siswa aktif dari <strong>SMK Telkom Malang (Moklet)</strong> pada kompetensi keahlian <strong>Teknik Komputer dan Jaringan (TKJ)</strong>. Dalam menempuh pendidikan di SMK Telkom Malang, saya mendalami infrastruktur jaringan komputer sekaligus aktif mengeksplorasi minat dan keterampilan di bidang <strong>Desain Grafis</strong> dan <strong>Video Editing</strong>. Di samping fokus akademik, saya memiliki kecintaan dan minat yang sangat besar di <strong>dunia modifikasi otomotif</strong>, khususnya konsep modifikasi <em>clean stance</em>, kerapian fitment velg, serta instalasi custom LED dan Running DRL. Dalam setiap karya dan kegiatan, saya senantiasa menjunjung tinggi kedisiplinan, ketelitian, etos kerja profesional, dan kesantunan.
+          </p>
+
+          <!-- ====================================================================
+               KARTU DESKRIPSI LENGKAP: TENTANG SAYA & MINAT OTOMOTIF
+               ==================================================================== -->
+          <div class="about-me-card">
+            <div class="about-me-header">
+              <div class="about-me-title">
+                <span>📖 TENTANG SAYA &amp; MINAT OTOMOTIF</span>
+              </div>
+              <span class="about-me-tag">SMK TELKOM MALANG // PROFIL SISWA</span>
+            </div>
+
+            <div class="about-paragraphs">
+              <p>
+                <strong>Latar Belakang &amp; Pendidikan:</strong> Saya menempuh studi di SMK Telkom Malang dengan program keahlian <em>Teknik Komputer dan Jaringan (TKJ)</em>. Melalui kurikulum sekolah yang berdisiplin tinggi dan berbasis teknologi terdepan, saya terlatih untuk berpikir analitis, memahami konfigurasi perangkat jaringan, serta menyelesaikan berbagai tantangan teknologi secara mandiri maupun kolaboratif.
+              </p>
+              <p>
+                <strong>Kreativitas Desain Grafis &amp; Video Editing:</strong> Ketertarikan saya terhadap estetika visual mendorong saya untuk mengasah keahlian sebagai desainer grafis dan editor video. Saya terbiasa mengolah komposisi tata letak grafis, poster promosi, identitas visual, serta memproduksi video sinematik dengan ritme audio dinamis, pewarnaan (color grading) berkarakter, dan format video reels resolusi tinggi.
+              </p>
+              <p>
+                <strong>Minat Mendalam di Dunia Mobil:</strong> Dunia otomotif adalah wadah ekspresi seni dan ketelitian bagi saya. Saya sangat mengagumi konsep modifikasi <em>Clean Stance</em> dan <em>Daily Cruiser</em>—di mana kendaraan tampil berkarakter, rapi, dan terawat tanpa mengurangi keselamatan maupun kenyamanan berkendara harian. Minat saya mencakup penentuan fitment velg yang proporsional, perancangan instalasi pencahayaan kustom berupa <em>Custom Running LED &amp; DRL</em>, hingga perawatan detailing eksterior mobil agar senantiasa prima.
+              </p>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div class="about-highlights-grid">
+              <div class="about-highlight-box">
+                <span class="highlight-label">SEKOLAH</span>
+                <span class="highlight-val">SMK Telkom Malang</span>
+                <span class="highlight-desc">Moklet - Disiplin, integritas, dan teknologi</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="highlight-label">JURUSAN</span>
+                <span class="highlight-val">Teknik Komputer Jaringan</span>
+                <span class="highlight-desc">Infrastruktur jaringan, routing, &amp; sistem komputer</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="highlight-label">KEAHLIAN KREATIF</span>
+                <span class="highlight-val">Desain &amp; Video Editor</span>
+                <span class="highlight-desc">Photoshop, Premiere Pro, &amp; CapCut PC</span>
+              </div>
+              <div class="about-highlight-box">
+                <span class="highlight-label">MINAT OTOMOTIF</span>
+                <span class="highlight-val">Clean Stance &amp; DRL</span>
+                <span class="highlight-desc">Fitment velg, custom running LED, &amp; detailing</span>
+              </div>
+            </div>
+
+            <!-- Software & Tools Strip -->
+            <div class="tools-pill-strip">
+              <span class="tools-pill-strip-label">Keahlian &amp; Tools:</span>
+              <span class="tool-chip">Teknik Komputer &amp; Jaringan (TKJ)</span>
+              <span class="tool-chip">Adobe Photoshop</span>
+              <span class="tool-chip">Adobe Premiere Pro</span>
+              <span class="tool-chip">CapCut PC</span>
+              <span class="tool-chip">Clean Stance Styling</span>
+              <span class="tool-chip">Custom Running DRL</span>
+              <span class="tool-chip">Otomotif Detailing</span>
+            </div>
+          </div>
+
+          <!-- ====================================================================
+               SOCIAL MEDIA RESMI DAFIN (IG @dfinn.orvla & TIKTOK @Doafinzx21)
+               *CATATAN: TIDAK ADA NOMOR TELEPON, TIDAK ADA ALAMAT, TIDAK ADA EMAIL*
+               ==================================================================== -->
+          <div class="social-telemetry-section">
+            <div class="social-telemetry-header">
+              <div class="social-section-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                </svg>
+                <span>AKUN MEDIA SOSIAL RESMI</span>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-1);">
+                KLIK UNTUK MENGUNJUNGI PROFIL RESMI
+              </div>
+            </div>
+
+            <div class="social-cards-grid">
+              <!-- Instagram Card: @dfinn.orvla -->
+              <div class="social-paddock-card">
+                <div class="social-card-left">
+                  <div class="social-icon-box social-icon-ig">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                  </div>
+                  <div class="social-card-meta">
+                    <span class="social-platform-name">INSTAGRAM RESMI</span>
+                    <span class="social-username-display" id="display-ig-handle">@dfinn.orvla</span>
+                  </div>
+                </div>
+
+                <div class="social-card-actions">
+                  <a href="https://instagram.com/dfinn.orvla" target="_blank" rel="noopener noreferrer" class="btn-social-visit" id="btn-link-ig">
+                    <span>Kunjungi @dfinn.orvla ↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- TikTok Card: @Doafinzx21 -->
+              <div class="social-paddock-card">
+                <div class="social-card-left">
+                  <div class="social-icon-box social-icon-tt">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.85.12V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.48 6.3 6.3 0 0 0 1.86-4.48V8.71a8.21 8.21 0 0 0 4.91 1.63v-3.65h-1z"/>
+                    </svg>
+                  </div>
+                  <div class="social-card-meta">
+                    <span class="social-platform-name">TIKTOK RESMI</span>
+                    <span class="social-username-display" id="display-tiktok-handle">@Doafinzx21</span>
+                  </div>
+                </div>
+
+                <div class="social-card-actions">
+                  <a href="https://tiktok.com/@Doafinzx21" target="_blank" rel="noopener noreferrer" class="btn-social-visit" id="btn-link-tiktok">
+                    <span>Kunjungi @Doafinzx21 ↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills & Strengths Matrix -->
+          <div class="driver-spec-matrix">
+            <div class="spec-category-card">
+              <div class="spec-category-title">
+                <span>💻 TEKNIK KOMPUTER &amp; JARINGAN (TKJ)</span>
+              </div>
+              <div class="telemetry-progress-list">
+                <div>
+                  <div class="progress-item-head">
+                    <span>Konfigurasi Jaringan LAN/WLAN &amp; Routing</span>
+                    <strong>95%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 95%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="progress-item-head">
+                    <span>Troubleshooting Komputer &amp; Sistem IT</span>
+                    <strong>92%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 92%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="progress-item-head">
+                    <span>Dasar Antarmuka Digital Web &amp; Client-Server</span>
+                    <strong>94%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 94%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spec-category-card">
+              <div class="spec-category-title">
+                <span>🎨 DESAIN GRAFIS &amp; VIDEO EDITING</span>
+              </div>
+              <div class="telemetry-progress-list">
+                <div>
+                  <div class="progress-item-head">
+                    <span>Desain Grafis, Tipografi &amp; Poster Digital</span>
+                    <strong>96%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 96%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="progress-item-head">
+                    <span>Video Editing, Ritme Audio &amp; Color Grading</span>
+                    <strong>95%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 95%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="progress-item-head">
+                    <span>Produksi Video Sinematik &amp; Reels 4K</span>
+                    <strong>94%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 94%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spec-category-card">
+              <div class="spec-category-title">
+                <span>🚗 MINAT &amp; APRESIASI OTOMOTIF</span>
+              </div>
+              <div class="telemetry-progress-list">
+                <div>
+                  <div class="progress-item-head">
+                    <span>Konsep Modifikasi Clean Stance</span>
+                    <strong>96%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 96%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="progress-item-head">
+                    <span>Sistem Pencahayaan LED &amp; Custom DRL</span>
+                    <strong>95%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 95%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="progress-item-head">
+                    <span>Detailing &amp; Estetika Perawatan Kendaraan</span>
+                    <strong>92%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 92%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="spec-category-card">
+              <div class="spec-category-title">
+                <span>🎓 NILAI SISWA SMK TELKOM MALANG</span>
+              </div>
+              <div class="telemetry-progress-list">
+                <div>
+                  <div class="progress-item-head">
+                    <span>Kedisiplinan &amp; Tanggung Jawab</span>
+                    <strong>96%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 96%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="progress-item-head">
+                    <span>Komunikasi &amp; Kerja Sama Tim</span>
+                    <strong>95%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 95%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="progress-item-head">
+                    <span>Semangat Belajar &amp; Berinovasi</span>
+                    <strong>99%</strong>
+                  </div>
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" style="width: 99%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VIEW 3: HALAMAN KONTAK (FORMULIR RESMI & SOSIAL MEDIA)
+         ====================================================================== -->
+    <section class="view-section" id="view-kontak">
+      <div class="contact-pitwall-wrapper">
+        <div class="pitwall-status-header">
+          <div>
+            <span class="frequency-tag">
+              <span class="flag-dot"></span>
+              <span>HUBUNGI DAFIN // SISWA SMK TELKOM MALANG</span>
+            </span>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">
+            STATUS: SIAP MENERIMA PESAN &amp; MASUKAN
+          </div>
+        </div>
+
+        <div class="contact-layout-split">
+          <!-- Left Info Column -->
+          <div class="contact-info-col">
+            <h3>KOMUNIKASI, MASUKAN, &amp; KOLABORASI PROYEK</h3>
+            <p>
+              Bapak/Ibu Guru, rekan-rekan, atau pengunjung yang ingin memberikan masukan pembelajaran, mendiskusikan pengembangan proyek web, maupun menjalin silaturahmi, dapat menyampaikan pesan melalui formulir di samping atau melalui saluran media sosial resmi saya di bawah ini.
+            </p>
+
+            <div class="radio-comm-badge">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                  <line x1="12" y1="19" x2="12" y2="23"/>
+                  <line x1="8" y1="23" x2="16" y2="23"/>
+                </svg>
+                <span>MEDIA SOSIAL RESMI</span>
+              </h4>
+              <p>
+                Tautan langsung menuju akun media sosial resmi saya:
+              </p>
+              <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+                <a href="https://instagram.com/dfinn.orvla" target="_blank" rel="noopener noreferrer" class="btn-card-link" id="contact-quick-ig">
+                  Instagram: @dfinn.orvla ↗
+                </a>
+                <a href="https://tiktok.com/@Doafinzx21" target="_blank" rel="noopener noreferrer" class="btn-card-link" id="contact-quick-tiktok">
+                  TikTok: @Doafinzx21 ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Form Column -->
+          <div class="contact-form-col">
+            <form class="pitwall-form" id="pitwall-contact-form">
+              <div class="form-group">
+                <label class="form-label" for="form-sender-name">Nama Lengkap / Instansi</label>
+                <input type="text" id="form-sender-name" class="form-input" placeholder="Contoh: Bapak/Ibu Guru / Nama Rekan" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-subject">Subjek Pesan</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="Contoh: Masukan Tugas / Diskusi Proyek Pembelajaran" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">Isi Pesan</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Tuliskan pesan, saran, atau masukan Anda di sini secara santun..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-transmit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                <span>Kirimkan Pesan</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       MODAL: LIGHTBOX DETAIL FOTO MOBIL
+       ======================================================================== -->
+  <div class="lightbox-modal" id="car-lightbox-modal">
+    <div class="lightbox-content-box">
+      <button class="lightbox-close-btn" id="lightbox-close-btn" title="Tutup">&times;</button>
+      <img src="" alt="Foto Mobil Dafin" class="lightbox-image-element" id="lightbox-img">
+      <div class="lightbox-caption-text" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL: COLOR PALETTE PRESETS & CUSTOM GRADIENT PICKER
+       ======================================================================== -->
+  <div class="modal-backdrop" id="modal-palette">
+    <div class="modal-box">
+      <div class="modal-header-row">
+        <h3 class="modal-title">
+          <span>🎨 PILIH GRADASI WARNA TEMA</span>
+        </h3>
+        <button class="modal-close-btn" id="btn-close-palette">&times;</button>
+      </div>
+
+      <p class="modal-subtitle">
+        Pilih gradasi warna yang nyaman di mata atau sesuaikan kombinasi warna favorit Anda:
+      </p>
+
+      <!-- Presets List -->
+      <div class="palette-presets-grid" id="palette-presets-container">
+        <!-- Dynamically injected via app.js -->
+      </div>
+
+      <!-- Custom Dual Color Picker -->
+      <div class="custom-picker-section">
+        <h4>SESUAIKAN GRADASI KUSTOM</h4>
+        <div class="dual-picker-row">
+          <div class="color-input-wrapper">
+            <input type="color" id="custom-color-1" value="#0ea5e9">
+            <span>WARNA 1 (KIRI)</span>
+          </div>
+          <div class="color-input-wrapper">
+            <input type="color" id="custom-color-2" value="#8b5cf6">
+            <span>WARNA 2 (KANAN)</span>
+          </div>
+        </div>
+        <button class="btn-apply-custom" id="btn-apply-custom-gradient">
+          Terapkan Gradasi Kustom
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SITE FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <span>DAFIN ORVALA APRILLO • SMK TELKOM MALANG // PORTOFOLIO RESMI SISWA</span>
+      </div>
+      <div>
+        <span>Dibuat dengan dedikasi di bidang teknik komputer jaringan, desain grafis, dan produksi multimedia.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
